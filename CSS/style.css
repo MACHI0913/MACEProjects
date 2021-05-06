@@ -20,7 +20,7 @@ html, body
 }
 .navbar-brand img
 {
-  height: 4rem;
+  height: 6rem;
 }
 .navbar-nav li 
 {
@@ -110,7 +110,12 @@ hr.my-4
 {
   border-top: 2px solid #e46217;
 }
-/*==== icons ====*/
+/*====new icons====*/
+.user 
+{
+  font-size: 5rem;
+}
+/*==== icons no longer in use
 .fa-user-graduate
 {
   color: #e54d26;
@@ -127,7 +132,7 @@ hr.my-4
 {
   font-size: 5rem;
   margin: 1rem;
-}
+} ====*/
 
 /*==== carousel ====*/
 .carousel-inner img
@@ -236,6 +241,7 @@ hr.my-4
   font-size: 4.5rem;
   padding: 3rem;
 }
+/*====fab icons no longer in use
 .fa-facebook-f
 {
   color: #3b5998;
@@ -255,7 +261,7 @@ hr.my-4
 .fa-envelope:hover, .fa-facebook-f:hover, .fa-google-drive:hover, .fa-linkedin-in:hover
 {
   color: #d5d5d5;
-}
+}=====*/
 
 /*footer section*/
 footer
