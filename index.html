@@ -28,18 +28,20 @@
     <nav class="navbar fixed-top navbar-light bg-secondary"> <!--navbar-light fixed-top bg-light-->
         <div class= "container-fluid">
             <!--Add Logo-->
-            <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo" title="Logo" width="120" height="180"></a>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" title="Logo" width="120" height="180"></a>
+            <!--Adds hamburger button-->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
             data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
             aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!--end button-->
             
             <!--Drop down nav-->
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ml-auto mb-2">
                     <li class="nav-item">
-                        <a class="nav-link active"  aria-current="page" href="#">Home</a>
+                        <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"  href="#profile">Profile</a>
@@ -152,12 +154,21 @@
                 <img src="img/background.png" class="d-block">
                 <!--adds a caption to carousel-->
                 <div class="carousel-caption">
-                    <h1 class="display-2">Resume</h1>
-                    <!--may delete the below buttons and add to jumbotron-->
-                    <button type="button" class="btn btn-outline-light btn-lg">VIEW 
-                    FULL RESUME</button>
-                    <button type="button" class="btn btn-primary btn-lg">Head to
-                    my Google Drive</button>                 
+                    <!--added-->
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-8 bg-custom d-none d-lg-block py-3 px-0">
+                                <h1 class="display-2">Resume</h1>
+                                <div class="border-top border-primary w-50 mx-auto my-3"></div>
+                                <!--may delete the below buttons and add to jumbotron-->
+                                
+                                <button type="button" class="btn btn-outline-light btn-lg ">VIEW 
+                                    FULL RESUME</button>
+                                <button type="button" class="btn btn-primary btn-lg">View 
+                                    my Google Drive</button>      
+                            </div>
+                        </div>
+                    </div><!--added end-->    
                 </div>
             </div>
 
@@ -171,15 +182,15 @@
                          <div class="row justify-content-end">
                              <div class="d-none d-md-block col-11-md col-lg-9
                              col-xl-8 bg-dark text-right">
-                                <h3 class="pb-3">Skills</h3>
-                                <div class="border-top border-white mb-3 w-75
-                                ml-auto"></div>
+                                <h3 class="pb-1">Skills</h3>
+                                <div class="border-top border-primary w-75
+                                mx-auto my-3"></div>
                                 <p class="lead"><ul>
-                                    <li>OS: Microsoft Windows 10, Windows Server 2016, Ubuntu</li>
-                                    <li>Network and Systems: GPOs, Active Directory, DNS, L2/L3 networking</li>
-                                    <li>Programming and Scripting: Python, Bash, PowerShell, C++</li>
-                                    <li>Offensive Security: Kali Linux, Metasploit, Nmap, aircrack-ng</li>
-                                    <li>Vulnerability Assessment: Wireshark, Nessus</li>
+                                    <li><b>OS:</b> Microsoft Windows 10, Windows Server 2016, Ubuntu</li>
+                                    <li><b>Network and Systems:</b> GPOs, Active Directory, DNS, L2/L3 networking</li>
+                                    <li><b>Programming and Scripting:</b> Python, Bash, PowerShell, C++</li>
+                                    <li><b>Offensive Security:</b> Kali Linux, Metasploit, Nmap, aircrack-ng</li>
+                                    <li><b>Vulnerability Assessment:</b> Wireshark, Nessus</li>
                                 </ul></p>
                              </div>                       
                          </div>
@@ -195,19 +206,18 @@
                     <!--adds container for info-->
                     <div class="container">
                         <div class="row">
-                            <div class="d-none d-md-block col-md-9 col-lg-7
-                            bg-white text-left text-dark">
-                                <h3 class="pb-3">Education</h3>
-                                <div class="border-top border-dark my-1 w-75"></div>
-                                <p class="lead">ROWAN UNIVERSITY MAY 2021 
-                                    B.A COMPUTING AND INFORMATICS, CONCENTRATION IN CYBER SECURITY
-                                    <ul>
-                                    <li>Honors: Cum Laude GPA: 3.4</li>
-                                    <li>Minor: Law and Justice studies</li>
-                                    <li>Capstone Project: back-end group lead, designed MySQL 
+                            <div class="d-none d-md-block col-md-11 col-lg-9
+                            col-xl-8 bg-white text-right text-dark">
+                                <h3 class="pb-1">EDUCATION</h3>
+                                <div class="border-top border-primary my-3 w-75 mx-auto"></div>
+                                <p><b>ROWAN UNIVERSITY</b><i>  May 2021</i>
+                                <br><i>-Computing & Informatics, Concentration in Cybersecurity</i></p>
+                                    <p><b>Honors:</b> Cum Laude GPA: 3.4
+                                    <br><b>Minor:</b> Law and Justice studies
+                                    <br><b>Capstone Project:</b> back-end group lead, designed MySQL 
                                         DB and supported with the implementation of an API in 
-                                        Python to connect to the Database</li>
-                                </ul></p>
+                                        Python to connect to the Database
+                                    </p>
                             </div>                       
                         </div>
                     </div>
@@ -223,13 +233,13 @@
                     <!--adds container for info-->
                     <div class="container">
                         <div class="row">
-                            <div class="d-none d-md-block col-md-9 col-lg-7
-                            bg-white text-left text-dark">
-                                <h3 class="pb-3">Experience</h3>
-                                <div class="border-top border-dark my-1 w-75"></div>
-                                <p class="lead">FREE LANCE AWS SYSTEMS ADMIN, GWC REFINISHING
+                            <div class="d-none d-md-block col-md-11 col-lg-9
+                            col-xl-8 bg-white text-left text-dark">
+                                <h3 class="pb-1">EXPERIENCE</h3>
+                                <div class="border-top border-primary my-3 w-75 mx-auto"></div>
+                                <p><b>FREE LANCE AWS SYSTEMS ADMIN,</b> <i>GWC REFINISHING</i>
                                     <ul>
-                                    <li>Managed AWS EC2 instance and systems administrator</li>
+                                    <li>Manage AWS EC2 instance and systems administrator</li>
                                     <li>Deployed and currently maintain a WordPress website using MySQL database</li>
                                     <li>AWS systems and resource utilization administrator- reduced monthly cost by 30%</li>
                                     <li>AWS components: EC2, Security groups, IAM, AWS CLI</li>
@@ -251,8 +261,8 @@
                         <div class="row">
                             <div class="d-none d-md-block col-md-9 col-lg-7
                             bg-white text-left text-dark">
-                                <h3 class="pb-3">Certificates</h3>
-                                <div class="border-top border-dark my-1 w-75"></div>
+                                <h3 class="pb-3">CERTIFICATES</h3>
+                                <div class="border-top border-primary my-3 w-75 mx-auto"></div>
                                 <p class="lead">Currently working on Comptia Sec+</p>
                             </div>                       
                         </div>
@@ -296,12 +306,13 @@
             <!--1st card-->
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="">
+                    <img class="card-img-top" src="img/Java.png">
                     <div class="card-body">
 
                         <h4 class="card-title"> <img src="https://img.icons8.com/nolan/64/java-eclipse.png"/>
-                            Java Project</h4>
-                        <p class="card-text">Project 1 description</p>
+                            Java Project: Car Loan Calculator</h4>
+                        <p class="card-text">GUI program intended to be used by a Financial Manager at a Car dealership.
+                             It will calculate monthly payments, interest paid in, and total payback amount for car loans.</p>
                         <a class="btn btn-outline-secondary" href="https://drive.google.com/drive/folders/1mxKSkWJ_e9I3AAUFDJlkU9DvMDYuQOKr?usp=sharing"
                          target="_blank">See Project</a>
                     </div>
@@ -311,11 +322,12 @@
             <!--2nd card-->
             <div class="col-md-4">
                 <div class="card">
-                    <img class="card-img-top" src="">
+                    <img class="card-img-top" src="/img/python.PNG">
                     <div class="card-body">
                         <h4 class="card-title"><img src="https://img.icons8.com/nolan/64/python.png"/>
-                            Python Project</h4>
-                        <p class="card-text">Project 2 description</p>
+                            Python Project: Airline Ticketing</h4>
+                        <p class="card-text">GUI program that allows users to select and purchase Airline tickets based on departure and destination, 
+                            seat availability, and time; while tracking sales for airline staff.</p>
                         <a class="btn btn-outline-secondary" href="https://drive.google.com/drive/folders/1SiAKkwDvZAW-TG4GRGTQxfmlZDVEkch6?usp=sharing" 
                         target="_blank">
                         See Project</a>
@@ -329,7 +341,7 @@
                     <img class="card-img-top" src="">
                     <div class="card-body">
                         <h4 class="card-title"><img src="https://img.icons8.com/nolan/64/api.png"/>
-                            API Senior Project</h4>
+                            API Capstone Project: Movie Database</h4>
                         <p class="card-text">Project 3 description</p>
                         <a class="btn btn-outline-secondary" href="https://drive.google.com/drive/folders/1YHQ1HrefDwiEQgs8i5WSg3dard0PXdsi?usp=sharing"
                         target="_blank">See Project</a>
@@ -349,14 +361,9 @@
             <div class="col-12 social padding">
                 <!--The icon8 -->
                 <a href="https://github.com/MACHI0913" target="_blank"><i class="github" ><img src="https://img.icons8.com/nolan/64/github.png"/></i></a>
-                <a href="#"><i class="lkdin" ><img src="https://img.icons8.com/nolan/64/linkedin.png"/></i></a>
+                <a href="https://www.linkedin.com/in/marcela-cordero-147656a7/"><i class="lkdin" ><img src="https://img.icons8.com/nolan/64/linkedin.png"/></i></a>
                 <a href="mailto:Marcela0913@gmail.com"><i class="gmail"><img src="https://img.icons8.com/nolan/64/gmail.png"/></i></a>
                 <a href="https://drive.google.com/drive/folders/1imrsHA4Pg-rJmc2FzudY_rC6LKhyw40G?usp=sharing"><i class="gdrive"><img src="https://img.icons8.com/nolan/64/google-drive.png"/></i></a>
-                <!--These are the fab icons
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fas fa-envelope"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#"><i class="fab fa-google-drive"></i></a>-->
             </div>
         </div>
     </div>
@@ -365,23 +372,43 @@
     <footer>
         <div id="footer" class="container-fluid padding">
             <div class="row text-center">
+                <!--1st column to footer-->
                 <div class="col-md-4">
                     <!-- add logo pic-->
-                    <img src="img/logo.png">
-                    <hr class="light">
-                    <p>215-930-3426</p>
-                    <p>marcela0913@gmail.com</p>
-                    <p>Pennsville, NJ 08070</p>
+                    <img src="img/logo.png" alt="logo" title="Logo" width="170" height="75">
+                    <hr class="light mx-auto">
+                    <p><img src="https://img.icons8.com/nolan/40/phone.png"/>215-930-3426</p>
+                    <p><img src="https://img.icons8.com/nolan/40/email.png"/>marcela0913@gmail.com</p>
+                    <p><img src="https://img.icons8.com/nolan/40/map-pin.png"/>NJ 08070</p>
                 </div>
-                <!--add columns to footer-->
+                <!--add 2nd column to footer-->
                 <div class="col-md-4">
-                    <hr class="light">
-                    <h5>Something here</h5>
-                    <hr class="light">
+                    <hr class="light mx-auto">
+                    <h5>About MACEprojects</h5>
+                    <hr class="light mx-auto">
+                    <!--Site description-->
+                    <p>
+                        This site was created by Marcela Cordero using <b>HTML5, CSS3, &amp Bootstrap 5</b>
+                        <br>Deployed using <b>AWS Amplify</b>
+                    </p>
+                </div>
+                <!--add 3rd column to footer-->
+                <div class="col-md-4">
+                    <hr class="light mx-auto">
+                    <h5>MEDIA</h5>
+                    <hr class="light mx-auto">
+                    <!--Site description-->
+                    <p class="lead">
+                        <img src="https://img.icons8.com/nolan/64/html-5.png"/>
+                        <img src="https://img.icons8.com/nolan/64/css-filetype.png"/>
+                        <img src="https://img.icons8.com/nolan/64/js.png"/>
+                        <br><img src="https://img.icons8.com/nolan/64/visual-studio-code-2019.png"/>
+                        <img src="https://img.icons8.com/color/64/000000/amazon-web-services.png"/>
+                    </p>
                 </div>
                 <div class="col-12">
                     <hr class="light-100">
-                    <h5>&copy; MACEProjects.com</h5>
+                    <h5><img src="https://img.icons8.com/nolan/40/copyright.png"/> MACEProjects.com</h5>
                 </div>
             </div>
         </div>
