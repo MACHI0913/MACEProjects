@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 
+
+
 html, body
 {
     height: 100%;
@@ -20,7 +22,7 @@ html, body
 }
 .navbar-brand img
 {
-  height: 6rem;
+  height: 5rem;
 }
 .navbar-nav li 
 {
@@ -32,7 +34,7 @@ html, body
 }
 .nav-link.active, .nav-link:hover
 {
-  color: #133dbd !important;
+  color: #f37f13 !important;
 }
 
 /*===== FIXED BACKGROUND IMG =====*/
@@ -148,13 +150,13 @@ hr.my-4
   }
 .carousel-caption h1 
   {
-    font-size: 500%;
+    font-size: 3.8rem;
     text-transform: uppsercase;
     text-shadow: 1px 1px 10px #000;
   }
 .carousel-caption h3
   {
-    font-size: 200%;
+    font-size: 2.2rem;
     font-weight: 500;
     text-shadow: 1px 1px 10px #000;
     padding-bottom: 1rem;
@@ -173,12 +175,7 @@ hr.my-4
   margin-right: 4px;
   margin-left: 4px;
 }
-/*.carousel-caption
-{
-  position: absolute;
-  top: 47%;
-  transform: translateY(-50);
-}*/
+
 .btn-primary
   {
     background-color: #e46217!important;
@@ -240,6 +237,7 @@ hr.my-4
 {
   border-color: #f138e8;
 }
+
 /*==== connect section ====*/
 .social a
 {
@@ -277,23 +275,58 @@ hr.light-100
   margin-top: .8rem;
   margin-bottom: 1rem;
 }
-
-
-
-
+p.custom
+{
+  font-size: 1.2rem;
+  line-height: 2;
+}
 
 
 
 /*---Media Queries --*/
-@media (max-width: 992px) 
+/*---devices under 1199px (xl) --*/
+@media (max-width: 1199.98px) 
 {
+.fixed-background
+  {
+    padding: 9rem 0;
+  }
+.carousel-caption h1 
+  {
+    font-size: 2.8rem;
+  }
+.carousel-caption h3
+  {
+    font-size: 1.8rem;
+  }
+}
+/*---devices under 992px (lg) --*/
+@media (max-width: 991.98px) 
+{
+  .fixed-background
+  {
+    padding: 7rem 0;
+  }
   .social a 
   {
     font-size: 4rem;
     padding: 2rem;
   }
+  .carousel-caption h1 
+  {
+    font-size: 2.5rem;
+  }
+  .carousel-caption h3
+  {
+    font-size: 1.5rem;
+  }
+  .btn-lg
+  {
+    font-size: .95rem;
+  }
 }
-@media (max-width: 768px) 
+/*---devices under 768px (md) --*/
+@media (max-width: 767.98px) /*md */
 {
   .carousel-caption
   {
@@ -301,11 +334,11 @@ hr.light-100
   }
   .carousel-caption h1 
   {
-    font-size: 350%;
+    font-size: 2.0rem;
   }
   .carousel-caption h3
   {
-    font-size: 140%;
+    font-size: 1.3rem;
     font-weight: 400;
     padding-bottom: .2rem;
   }
@@ -326,7 +359,38 @@ hr.light-100
 }
 @media (max-width: 576px) 
 {
-  
+  .carousel-caption
+  {
+    top: 15%;
+  }
+  .carousel-caption h1 
+  {
+    font-size: 1.5rem;
+  }
+  .carousel-caption h3
+  {
+    font-size: 1.0rem;
+    font-weight: 300;
+    padding-bottom: .1rem;
+  }
+  .carusel-caption .btn
+  {
+    font-size: 85%;
+    padding: 6px 12px;
+  }
+  .btn-lg
+  {
+    font-size: .55rem;
+  }
+  .display-4
+  {
+    font-size: 100%;
+  }
+  .social a 
+  {
+    font-size: 1.5rem;
+    padding: .2rem;
+  }
 }
 
 
